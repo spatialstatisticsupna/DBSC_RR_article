@@ -1,5 +1,7 @@
 # A clustering adjusted regression model to identify extreme risks in small areas
-This repository contains the R code to fit with INLA the spatial models described in the work entitled _"Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach"_ [(Adin et al., 2022)](10.21203/rs.3.rs-864393/v1). In this work we consider several classical disease mapping models and an extension of the density-based spatial clustering (DBSC) algorithm proposed in Santafé et al. (2021) to an analysis of COVID-19 related mortality in English small areas during the first wave of the epidemic in the first half of 2020. It also contains the necessary functions to reproduce all the figures and tables of the article.
+This repository contains the R code to fit with INLA the spatial models described in the work entitled _"Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach"_ [(Adin et al., 2022)](10.21203/rs.3.rs-864393/v1). It also contains the necessary functions to reproduce all the figures and tables of the article.
+
+In this work we consider several classical disease mapping models and an extension of the density-based spatial clustering (DBSC) algorithm proposed in Santafé et al. (2021) to an analysis of COVID-19 related mortality in English small areas during the first wave of the epidemic in the first half of 2020. 
 
 
 ## Table of contents
