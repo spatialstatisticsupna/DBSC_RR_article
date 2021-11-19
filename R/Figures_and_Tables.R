@@ -119,9 +119,6 @@ BYM2.C.risk.map <- tm_shape(carto) +
 
 tmap_save(BYM2.C.risk.map, file="figures/Map_EstimatedRisks_BYM2+C+RR.pdf")
 
-tmap_options(output.dpi=300)
-tmap_save(BYM2.C.risk.map, file="figures/Figure2_risks.png")
-
 
 ## Map of posterior exceedence probabilities ##
 paleta <- brewer.pal(7,"Blues")[-c(1,5)]
@@ -136,9 +133,6 @@ BYM2.C.prob.map <- tm_shape(carto) +
             legend.outside.size=0.2, outer.margins=c(0.02,0.01,0.02,0.01))
 
 tmap_save(BYM2.C.prob.map, file="figures/Map_ExceedenceProbs_BYM2+C+RR.pdf")
-
-tmap_options(output.dpi=300)
-tmap_save(BYM2.C.prob.map, file="figures/Figure2_probs.png")
 
 
 ####################################################################################
