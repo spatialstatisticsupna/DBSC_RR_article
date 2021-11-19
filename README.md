@@ -1,5 +1,5 @@
 # A clustering adjusted regression model to identify extreme risks in small areas
-This repository contains the R code to fit with INLA the spatial models described in the work entitled _"Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach"_ [(Adin et al., 2022)](10.21203/rs.3.rs-864393/v1). It also contains the necessary functions to reproduce all the figures and tables of the article.
+This repository contains the R code to fit with INLA the spatial models described in the work entitled _"Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach"_ [(Adin et al., 2022)](https://doi.org/10.21203/rs.3.rs-864393/v1). It also contains the necessary functions to reproduce all the figures and tables of the article.
 
 In this work we consider several classical disease mapping models and an extension of the density-based spatial clustering (DBSC) algorithm proposed in Santafé et al. (2021) to an analysis of COVID-19 related mortality in English small areas during the first wave of the epidemic in the first half of 2020. 
 
@@ -47,7 +47,7 @@ R code to fit with INLA (http://www.r-inla.org/) the spatial models considered i
   
   *_NOTE: Adjacency matrices (`Wk`), neighborhood structure matrices (`Q.clust`) and final INLA datasets (`data.INLA.C`) that are necessary to fit these models have been previously precomputed and stored at [**DBSC_nbMatrices.Rdata**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/DBSC_nbMatrices.Rdata) file to save computation time._
 
-- [**England_MSOA_ClusterModels_BYM2_RR**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/England_MSOA_ClusterModels_BYM2_RR.R)
+- [**England_MSOA_ClusterModels_BYM2_RR.R**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/England_MSOA_ClusterModels_BYM2_RR.R)
   
   R code to fit the clustering adjusted regression model with BYM2 prior distribution and restricted regression to deal with spatial confounding issues.
 
