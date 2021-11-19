@@ -14,9 +14,21 @@ In this work we consider several classical disease mapping models and an extensi
 # Data
 COVID-19 mortality data and potential risks factors (covariates) across the 6791 middle super output areas (MSOAs) of England during the period March to June 2020. The data is publically available online without any form of restriction or copyright.
 
-- The [**England_MSOA.Rdata**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/data/England_MSOA.Rdata) file contains the following objects:
-  	- **carto**: `sf` object containing the polygons of the MSOAs of England and 12 variables
-  	- **W**: spatial adjacency matrix of the MSOAs of England
+The [**England_MSOA.Rdata**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/data/England_MSOA.Rdata) file contains the following objects:
+  - **W**: spatial adjacency matrix of the MSOAs of England
+  - **carto**: `sf` object containing the polygons of the MSOAs of England and 12 variables
+    - **_CODE_**: character vector of geographic identifiers
+    - **_NAME_**: character vector of MSOAs name
+    - **_Region_**: classification of MSOAs by region (factor with 9 levels)
+    - **_Urban-Rural_**: classification of MSOAs according to urbal-rural category (factor with 8 levels)
+    - **_O_**: observed number of COVID-19 related deaths
+    - **_E_**: expected number of COVID-19 related deaths
+    - **_SMR_**: standardized mortality ratio
+    - **_ISOL_**: Lieberson isolation index
+    - **_NH_**: nursing home location
+    - **_HDD_**: health deprivation and disability index
+    - **_AIRQ_**: measure of poor air quality
+    - **_geometry_**: sfc_GEOMETRY
   
 
 The COVID-19 deaths data is associated with the online article by the UK Office of National Statistics entitled _"Deaths involving COVID-19 by local area and socioeconomic deprivation: deaths occurring between 1 March and 31 July 2020"_ (Office of National Statistics (ONS), 2020). Data on ethnicity and nursing homes are from the UK Census, data on health deprivation are from a 2019 compendium of different types of small area deprivation (Ministry of Housing, Communities and Local Government (MHCLG), 2019), while data on air pollution are from the Access to Healthy Assets and Hazards small area indicators profile at https://www.cdrc.ac.uk/new-update-access-to-healthy-assets-and-hazards-ahah-data-resource/.
