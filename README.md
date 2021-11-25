@@ -39,21 +39,21 @@ R code to fit the spatial models with INLA (http://www.r-inla.org/) considered i
 
 - [**England_MSOA_SpatialModels.R**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/England_MSOA_SpatialModels.R)
 
-  R code to fit using the [**bigDM**](https://github.com/spatialstatisticsupna/bigDM) package spatial models that incorporates area-level random effects (see Equation (1) of Adin et al., 2021), denoted as iCAR, LCAR, BYM or BYM2 depending on the conditional autoregressive (CAR) prior distribution considered for the spatially structured random effect. The restricted regression approach (Reich et al., 2006) has been adopted to deal with spatial confounding between fixed and random effect. For those models, the "+RR" sufix has been added to the notation.
+  R code to fit spatial models using the [**bigDM**](https://github.com/spatialstatisticsupna/bigDM) package that incorporates area-level random effects (see Equation (1) of Adin et al., 2021), denoted as iCAR, LCAR, BYM or BYM2 depending on the conditional autoregressive (CAR) prior distribution considered for the spatially structured random effect. The restricted regression approach (Reich et al., 2006) has been adopted to deal with spatial confounding between fixed and random effects. For those models, the "+RR" suffix has been added to the notation.
 
 - [**England_MSOA_ClusterModels.R**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/England_MSOA_ClusterModels.R)
 
-  R code to fit spatial models that incorporates both area-level and cluster-level random effects (see Equation (3) of Adin et al., 2022), denoted as iCAR+C, LCAR+C, BYM+C or BYM2+C depending on the CAR prior distribution adopted for both spatial random effects. Our modelling approach consists on a two-stage procedure. First, the DBSC algorithm (implemented in the [**bigDM**](https://github.com/spatialstatisticsupna/bigDM) package) is applied over the residuals of the non-spatial model (GLM). Then, a model with area-level and cluster-level random effect is fitted.
+  R code to fit spatial models that incorporate both area-level and cluster-level random effects (see Equation (3) of Adin et al., 2022), denoted as iCAR+C, LCAR+C, BYM+C or BYM2+C depending on the CAR prior distribution adopted for both spatial random effects. Our modelling approach consists of a two-stage procedure. First, the DBSC algorithm (implemented in the [**bigDM**](https://github.com/spatialstatisticsupna/bigDM) package) is applied over the residuals of the non-spatial model (GLM). Then, a model with area-level and cluster-level random effects is fitted.
   
   *_NOTE: Adjacency matrices (`Wk`), neighborhood structure matrices (`Q.clust`) and final INLA datasets (`data.INLA.C`) that are necessary to fit these models have been previously precomputed and stored at [**DBSC_nbMatrices.Rdata**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/DBSC_nbMatrices.Rdata) file to save computation time._
 
 - [**England_MSOA_ClusterModels_BYM2_RR.R**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/England_MSOA_ClusterModels_BYM2_RR.R)
   
-  R code to fit the clustering adjusted regression model with BYM2 prior distribution and restricted regression to deal with spatial confounding issues.
+  R code to fit the clustering adjusted regression model with the BYM2 prior distribution and restricted regression to deal with spatial confounding issues.
 
 - [**Figures_and_Tables.R**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/Figures_and_Tables.R)
   
-  This R script contains the necessary functions to reproduce all the figures and tables of the present paper. The fitted models with INLA can be download from https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/.
+  This R script contains the necessary functions to reproduce all the figures and tables of the present paper. The fitted models with INLA can be downloaded from https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/.
   
   
 # Acknowledgements
@@ -63,7 +63,7 @@ This work has been supported by Projects MTM2017-82553-R (AEI/FEDER, UE) and PID
 
 
 # References
-[Adin, A., Condong, P., Santafé, G., and Ugarte, M.D. (2022). Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach. _Stochastic Environmental Research and Risk Assessment (under review)_. DOI: 10.21203/rs.3.rs-864393/v1](https://www.researchsquare.com/article/rs-864393/v1)
+[Adin, A., Congdon, P., Santafé, G., and Ugarte, M.D. (2022). Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach. _Stochastic Environmental Research and Risk Assessment (under review)_. DOI: 10.21203/rs.3.rs-864393/v1](https://www.researchsquare.com/article/rs-864393/v1)
 
 [Ministry of Housing, Communities and Local Government (MHCLG). (2019). _English Indices of Deprivation 2019_. MHCLG, London, UK](https://dera.ioe.ac.uk/34259/1/IoD2019_Technical_Report.pdf)
 
