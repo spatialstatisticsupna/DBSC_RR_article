@@ -35,7 +35,7 @@ The COVID-19 deaths data is associated with the online article by the UK Office 
 
 
 # R code
-R code to fit with INLA (http://www.r-inla.org/) the spatial models considered in the present paper, and code to reproduce all the figures and tables. All the R files are written by the authors of the paper.
+R code to fit the spatial models with INLA (http://www.r-inla.org/) considered in the present paper, and code to reproduce all the figures and tables. All the R files are written by the authors of the paper.
 
 - [**England_MSOA_SpatialModels.R**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/England_MSOA_SpatialModels.R)
 
