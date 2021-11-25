@@ -39,7 +39,7 @@ R code to fit the spatial models with INLA (http://www.r-inla.org/) considered i
 
 - [**England_MSOA_SpatialModels.R**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/England_MSOA_SpatialModels.R)
 
-  R code to fit spatial models using the [**bigDM**](https://github.com/spatialstatisticsupna/bigDM) package that incorporates area-level random effects (see Equation (1) of Adin et al., 2021), denoted as iCAR, LCAR, BYM or BYM2 depending on the conditional autoregressive (CAR) prior distribution considered for the spatially structured random effect. The restricted regression approach (Reich et al., 2006) has been adopted to deal with spatial confounding between fixed and random effects. For those models, the "+RR" suffix has been added to the notation.
+  R code to fit spatial models using the [**bigDM**](https://github.com/spatialstatisticsupna/bigDM) package that incorporates area-level random effects (see Equation (1) of Adin et al., 2022), denoted as iCAR, LCAR, BYM or BYM2 depending on the conditional autoregressive (CAR) prior distribution considered for the spatially structured random effect. The restricted regression approach (Reich et al., 2006) has been adopted to deal with spatial confounding between fixed and random effects. For those models, the "+RR" suffix has been added to the notation.
 
 - [**England_MSOA_ClusterModels.R**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/R/England_MSOA_ClusterModels.R)
 
