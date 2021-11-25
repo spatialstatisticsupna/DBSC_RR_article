@@ -12,7 +12,7 @@ In this work we consider several classical disease mapping models and an extensi
 
 
 # Data
-COVID-19 mortality data and potential risks factors (covariates) across the 6791 middle super output areas (MSOAs) of England during the period March to June 2020. The data is publically available online without any form of restriction or copyright.
+COVID-19 mortality data and potential risks factors (covariates) across the 6791 middle super output areas (MSOAs) of England during the period March to June 2020. The data are publicly available online without any form of restriction or copyright.
 
 The [**England_MSOA.Rdata**](https://github.com/spatialstatisticsupna/DBSC_RR_article/blob/master/data/England_MSOA.Rdata) file contains the following objects:
   - **W**: spatial adjacency matrix of the MSOAs of England
