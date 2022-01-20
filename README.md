@@ -1,5 +1,5 @@
 # A clustering adjusted regression model to identify extreme risks in small areas
-This repository contains the R code to fit with INLA the spatial models described in the work entitled _"Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach"_ [(Adin et al., 2022)](https://doi.org/10.21203/rs.3.rs-864393/v1). It also contains the necessary functions to reproduce all the figures and tables of the article.
+This repository contains the R code to fit with INLA the spatial models described in the work entitled _"Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach"_ [(Adin et al., 2022)](https://doi.org/10.1007/s00477-022-02175-5). It also contains the necessary functions to reproduce all the figures and tables of the article.
 
 In this work we consider several classical disease mapping models and an extension of the density-based spatial clustering (DBSC) algorithm proposed in Santafé et al. (2021) to an analysis of COVID-19 related mortality in English small areas during the first wave of the epidemic in the first half of 2020. 
 
@@ -63,7 +63,7 @@ This work has been supported by Projects MTM2017-82553-R (AEI/FEDER, UE) and PID
 
 
 # References
-[Adin, A., Congdon, P., Santafé, G., and Ugarte, M.D. (2022). Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach. _Stochastic Environmental Research and Risk Assessment (accepted for publication)_. DOI: 10.21203/rs.3.rs-864393/v1](https://www.researchsquare.com/article/rs-864393/v1)
+[Adin, A., Congdon, P., Santafé, G., and Ugarte, M.D. (2022). Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach. _Stochastic Environmental Research and Risk Assessment (online first)_. DOI: 10.1007/s00477-022-02175-5](https://link.springer.com/article/10.1007/s00477-022-02175-5)
 
 [Ministry of Housing, Communities and Local Government (MHCLG). (2019). _English Indices of Deprivation 2019_. MHCLG, London, UK](https://dera.ioe.ac.uk/34259/1/IoD2019_Technical_Report.pdf)
 
