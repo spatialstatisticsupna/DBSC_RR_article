@@ -63,7 +63,7 @@ This work has been supported by Projects MTM2017-82553-R (AEI/FEDER, UE) and PID
 
 
 # References
-[Adin, A., Congdon, P., Santafé, G., and Ugarte, M.D. (2022). Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach. _Stochastic Environmental Research and Risk Assessment (online first)_. DOI: 10.1007/s00477-022-02175-5](https://link.springer.com/article/10.1007/s00477-022-02175-5)
+[Adin, A., Congdon, P., Santafé, G., and Ugarte, M.D. (2022). Identifying extreme COVID-19 mortality risks in English small areas: a disease cluster approach. _Stochastic Environmental Research and Risk Assessment_, **36(10)**:2995-3010. DOI: 10.1007/s00477-022-02175-5](https://link.springer.com/article/10.1007/s00477-022-02175-5)
 
 [Ministry of Housing, Communities and Local Government (MHCLG). (2019). _English Indices of Deprivation 2019_. MHCLG, London, UK](https://dera.ioe.ac.uk/34259/1/IoD2019_Technical_Report.pdf)
 
