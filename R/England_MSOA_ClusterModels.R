@@ -5,6 +5,8 @@ library(maptools)
 library(sf)
 library(spdep)
 
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+
 
 #########################################
 ## Load the data and cartography files ##
@@ -80,7 +82,7 @@ if(!file.exists("DBSC_nbMatrices.Rdata")){
     
     cat("  + Computing neighbourhood graph of cluster-level random effect\n")
     k <- length(table(carto.aux$ID.group))
-    carto.partition <- unionSpatialPolygons(as(carto.aux,"Spatial"),carto.aux$ID.group)
+    carto.partition <- aggregate(carto.aux[,"geometry"], by=list(ID.group=carto.aux$ID.group), head)
     carto.nb <- poly2nb(carto.partition)
     carto.W <- nb2mat(carto.nb, style="B")
     

@@ -5,6 +5,8 @@ library(maptools)
 library(sf)
 library(spdep)
 
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+
 
 #########################################
 ## Load the data and cartography files ##
@@ -28,13 +30,16 @@ data.INLA <- data.frame(O=carto$O, E=carto$E, X, Area=carto$CODE, ID.area=1:S)
 
 ###########################################################################################################
 ## Load previously fitted models. The BYM2 model fitted with INLA can be downloaded from:                ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_BYM2.Rdata    ##
+##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM2.Rdata    ##
 ###########################################################################################################
 load("DBSC_nbMatrices.Rdata")
-load("England_MSOA_ClusterModels_BYM2.Rdata")
+
+options(timeout=600)
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM2.Rdata"))
+
 
 ## Select l=1 neighborhood model ##
-BYM2.C <- MODELS$`l=1`
+BYM2.C <- BYM2.C$`l=1`
 summary(BYM2.C)
 
 k <- length(table(data.INLA.C$`l=1`$ID.clust))

@@ -3,6 +3,8 @@ library(bigDM)
 library(INLA)
 library(sf)
 
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+
 
 #########################################
 ## Load the data and cartography files ##

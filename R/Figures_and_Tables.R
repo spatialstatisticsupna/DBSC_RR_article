@@ -5,6 +5,8 @@ library(sf)
 library(RColorBrewer)
 library(tmap)
 
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+
 
 #########################################
 ## Load the data and cartography files ##
@@ -53,28 +55,20 @@ DIC <- function(x){
 }
 
 
-###########################################################################################################
-## Load all the models fitted with INLA, which can be downloaded from:                                   ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_iCAR.Rdata    ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_LCAR.Rdata    ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_BYM.Rdata     ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_BYM2.Rdata    ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_iCAR.Rdata    ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_LCAR.Rdata    ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM.Rdata     ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM2.Rdata    ##
-##  - https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM2_RR.Rdata ##
-###########################################################################################################
-load("England_MSOA_SpatialModels_iCAR.Rdata")
-load("England_MSOA_SpatialModels_LCAR.Rdata")
-load("England_MSOA_SpatialModels_BYM.Rdata")
-load("England_MSOA_SpatialModels_BYM2.Rdata")
-load("England_MSOA_ClusterModels_BYM2.Rdata")
-load("England_MSOA_ClusterModels_iCAR.Rdata")
-load("England_MSOA_ClusterModels_LCAR.Rdata")
-load("England_MSOA_ClusterModels_BYM.Rdata")
-load("England_MSOA_ClusterModels_BYM2.Rdata")
-load("England_MSOA_ClusterModels_BYM2_RR.Rdata")
+#########################################################################
+## Load all the models fitted with INLA, which can be downloaded from: ##
+## https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models           ##
+#########################################################################
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_iCAR.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_LCAR.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_BYM.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_SpatialModels_BYM2.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM2.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_iCAR.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_LCAR.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM2.Rdata"))
+load(url("https://emi-sstcdapp.unavarra.es/England_MSOA/INLA_models/England_MSOA_ClusterModels_BYM2_RR.Rdata"))
 
 
 ###########################################################################################
